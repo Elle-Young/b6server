@@ -6,6 +6,6 @@ app.get('/', (request, response) => {
     response.status(200).redirect('index.html');
 });
 
-const PORT = 3000
+const PORT = process.env.PORT
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
